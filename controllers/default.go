@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	TOKEN    = "这个是你填写在微信公众账号里面的token"
+	TOKEN    = "astaxiefromqqweixin"
 	Text     = "text"
 	Location = "location"
 	Image    = "image"
@@ -117,7 +117,7 @@ func dealwith(req *Request) (resp *Response, err error) {
 	beego.Info(req.MsgType)
 	beego.Info(req.Content)
 	if req.MsgType == Text {
-		if strings.Trim(strings.ToLower(req.Content), " ") == "help" {
+		if strings.Trim(strings.ToLower(req.Content), " ") == "help" || req.Content == "Hello2BizUser" || req.Content == "subscribe" {
 			resp.Content = "目前支持包的使用说明及例子的说明，这些例子和说明来自于github.com/astaxie/gopkg，例如如果你想查询strings有多少函数，你可以发送：strings，你想查询strings.ToLower函数，那么请发送：strings.ToLower"
 			return resp, nil
 		}
