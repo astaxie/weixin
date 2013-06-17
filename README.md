@@ -4,4 +4,4 @@
 
 # 添加微信账号
 
-![](http://bbs.mygolang.com/qrcode_for_gh_83ea6a23d55b_430.jpg)
+![](http://bbs.mygolang.com/weixin_logo.jpg)
